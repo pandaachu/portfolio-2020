@@ -1,0 +1,88 @@
+@function toRem($unit) {
+  @return ($unit / $font-size-base) * 1rem;
+}
+
+// $font-h2-md: toRem(48px);
+$font-h2: toRem(106px);
+$font-h3-md: toRem(32px);
+$font-h3: toRem(60px);
+$font-h4: toRem(45px);
+$font-h5: toRem(20px);
+$font-h6: toRem(16px);
+$font-l: toRem(64px);
+$font-m: toRem(14px);
+$font-s: toRem(12px);
+
+.font-baskervville{
+  font-family: 'Baskervville', serif;
+}
+.font-muli{
+  font-family: muli, sans-serif;
+}
+.font-playfair{
+  font-family: 'Playfair Display', serif;
+}
+.font-yuGothicUi{
+  font-family: 'Yu Gothic UI', sans-serif;
+}
+html, body{
+  font-size: $font-size-base;
+  font-family: muli, 'Yu Gothic UI', sans-serif;
+  color: $primary;
+}
+
+.h2{
+  font-size: $font-h2;
+  // @include media-breakpoint-up(lg) {
+  //   font-size: $font-h2-md;
+  // }
+}
+.h3{
+  font-size: $font-h3;
+  // @include media-breakpoint-up(lg) {
+  //   font-size: $font-h3-md;
+  // }
+}
+.h4{
+  font-size: $font-h4;
+}
+.h5{
+  font-size: $font-h5;
+}
+.h6{
+  font-size: $font-h6;
+}
+.h6--verticalCenter{
+  line-height:$font-h6 ;
+}
+.font-s{
+  font-size:$font-s;
+}
+.font-m{
+  font-size:$font-m;
+}
+.font-info{
+  font-size:$font-m;
+  color: #00000099;
+}
+.font-title{
+  font-family: 'Baskervville', serif;
+}
+
+// font-family: 'Comfortaa', cursive;
+// font-family: 'Cormorant Garamond', serif;
+// font-family: 'Gilda Display', serif;
+// font-family: 'Italiana', serif;
+// font-family: 'Playfair Display', serif;
+// font-family: 'Questrial', sans-serif;
+// font-family: 'Baskervville', serif;
+
+.letter-spacing-1{
+  letter-spacing: 3px;
+}
+.letter-spacing-2{
+  letter-spacing: 5px;
+}
+.line-hight-n1{
+  line-height: 3rem;
+}
