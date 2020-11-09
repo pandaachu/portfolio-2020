@@ -1,6 +1,8 @@
-$(document).ready(() => {
+"use strict";
+
+$(document).ready(function () {
   gsap.registerPlugin(ScrollTrigger);
-  gsap.utils.toArray(".js-bgScroll").forEach(function(section) {
+  gsap.utils.toArray(".js-bgScroll").forEach(function (section) {
     gsap.to(section, {
       // backgroundPosition: `center ${-innerHeight / 2}px`,
       backgroundPosition: 'center 15%',
@@ -11,32 +13,31 @@ $(document).ready(() => {
         // start: 'top 70%',
         // end: '+=100',
         // markers: true,
-        toggleActions:'restart none none none',
+        toggleActions: 'restart none none none',
         scrub: true
       }
     });
   });
-
   gsap.to('.js-scroll--down', {
-    y:'+=30',
+    y: '+=30',
     duration: 3,
     stagger: 0.5,
     ease: 'power4',
     scrollTrigger: {
       trigger: 'js-scroll',
-      toggleActions:'restart none none none',
+      toggleActions: 'restart none none none',
       // markers: true,
       scrub: true
     }
   });
   gsap.to('.js-scroll--up', {
-    y:'-=50',
+    y: '-=50',
     duration: 3,
     stagger: 0.5,
     ease: 'power4',
     scrollTrigger: {
       trigger: '.js-scroll--up',
-      toggleActions:'restart none none none',
+      toggleActions: 'restart none none none',
       // markers: true,
       scrub: true
     }
@@ -54,26 +55,23 @@ $(document).ready(() => {
       markers: true,
       scrub: true
     }
-  });
+  }); // line animation
 
-  // line animation
-  const line = document.querySelectorAll('.js-lineToRight')
-  gsap.utils.toArray(line).forEach(function(section) {
+  var line = document.querySelectorAll('.js-lineToRight');
+  gsap.utils.toArray(line).forEach(function (section) {
     gsap.to(section, {
-      opacity: 1, 
-      width:150,
+      opacity: 1,
+      width: 150,
       duration: 3,
       stagger: 0.5,
       ease: 'power4',
       scrollTrigger: {
         trigger: section,
-        toggleActions:'restart none none none',
-        // markers: true,
+        toggleActions: 'restart none none none' // markers: true,
+
       }
     });
-  });
-
-  // gsap.utils.toArray(".js-lineToRight").forEach(function(section) {
+  }); // gsap.utils.toArray(".js-lineToRight").forEach(function(section) {
   //   gsap.to(section, {
   //     // backgroundPosition: `center ${-innerHeight / 2}px`,
   //     width:150,
@@ -89,3 +87,4 @@ $(document).ready(() => {
   //   });
   // });
 });
+//# sourceMappingURL=all.js.map
