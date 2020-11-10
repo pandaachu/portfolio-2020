@@ -44,8 +44,10 @@
     }
     &__desktop{
       &__img{
-        width: 328px;
+        width: 400px;
         height: 500px;
+        background-size: 100%;
+        background-position: 50% 0;
       }
       &__desc{
         bottom: -3em;
@@ -61,6 +63,8 @@
       &__img{
         width: 128px;
         height: 228px;
+        background-size: 100%;
+        background-position: center 10%;
       }
       &__line{
         // width: 150px;
@@ -116,22 +120,24 @@
     }
     &__mobileImg{
       background-image: url(../images/forest_mb.jpg);
-      background-size: 100%;
-      background-position: center 10%;
+      
     }
     
   }
   .hotelBooking{
     &__desktopImg{
       background-image: url(../images/aloha_pc.jpg);
-      background-size: 100%;
-      background-position: center 10%;
     }
     &__mobileImg{
       background-image: url(../images/aloha_mb.jpg);
-      background-size: 100%;
-      background-position: center 10%;
     }
-    
+  }
+  .lanTreasure{
+    &__desktopImg{
+      background-image: url(../images/sul-treasure_pc.jpg);
+    }
+    &__mobileImg{
+      background-image: url(../images/sul-treasure_mb.jpg);
+    }
   }
 }
