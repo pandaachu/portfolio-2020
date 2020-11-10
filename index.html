@@ -34,21 +34,20 @@
   <section class="profile d-flex justify-content-center position-relative">
     <div class="d-flex flex-column justify-content-center" style="height: 80vh;">
       <div class="profile__imgWrap mb-4 js-bgScroll"></div>
-      <!-- <img src="assets/images/profile.jpg" alt=""> -->
-      <ul class="d-flex justify-content-between font-playfair letter-spacing-1 text-info pl-0 js-scroll--up">
+      <ul class="d-flex justify-content-between font-playfair letter-spacing-1 text-info pl-0 js-profileScrollUp">
         <li>#Hong Kong</li>
         <li>#Nature</li>
         <li>#Hiking</li>
       </ul>
     </div>
     <div class="profile__content position-absolute">
-      <div class="d-flex justify-content-between mb-2 js-nameScroll">
+      <div class="d-flex justify-content-between mb-2 js-profileNameScroll">
         <h2 class="h2 font-baskervville font-italic letter-spacing-2">Sylia</h2>
         <h2 class="h2 font-baskervville font-italic letter-spacing-2">Chui</h2>
       </div>
       <div class="d-flex justify-content-between align-items-center">
         <p class="text-dark font-weight-bold font-s letter-spacing-1">Front-End  Developer</p>
-        <div class="lineWrap js-scroll--up"><span class="lineWrap__line"></span></div>
+        <div class="lineWrap js-profileScrollUp"><span class="lineWrap__line"></span></div>
       </div>
     </div>
   </section>
@@ -58,9 +57,11 @@
     <div class="work__content position-absolute d-flex w-100">
       <!-- images -->
       <div class="work__desktop d-flex flex-column align-items-end w-50">
-        <a href="https://pandaachu.github.io/js-week8-final/#/" class="work__desktop__img eShop__desktopImg position-relative js-bgScroll">
+        <a
+          href="https://pandaachu.github.io/js-week8-final/#/"
+          class="work__desktop__img eShop__desktopImg position-relative js-bgScroll">
           <div class="work__desktop__desc text-center position-absolute">
-            <h4 class="work__desktop__title h4 font-baskervville letter-spacing-1">FOREST</h4>
+            <h4 class="work__desktop__title h4 font-baskervville letter-spacing-1 js-scrollUp">FOREST</h4>
             <p class="font-m font-baskervville font-italic text-highlight d-flex justify-content-center align-items-center">Desktop Ver. <span class="ml-2"><img src="./assets/images/arrow.png" alt=""></span></p>
           </div>
         </a>
@@ -68,9 +69,9 @@
       <!-- content -->
       <div class="work__text w-50">
         <div>
-          <h3 class="h3 font-baskervville font-italic letter-spacing-1 text-highlight">E-Shop</h3>
-        <h6 class="h6 letter-spacing-1 font-weight-normal mb-3">電商網站<span class="font-weight-light">模擬</span></h6>
-        <a href="https://pandaachu.github.io/js-week8-final/#/" class="h5 font-baskervville hover-underline-animation">Check website<span class="hover-roll h5 material-icons">add</span></a>
+          <h3 class="h3 font-baskervville font-italic letter-spacing-1 text-highlight js-scrollShow">E-Shop</h3>
+          <h6 class="h6 letter-spacing-1 font-weight-normal mb-3 js-scrollShow">電商網站<span class="font-weight-light">模擬</span></h6>
+          <a href="https://pandaachu.github.io/js-week8-final/#/" class="h5 font-baskervville hover-underline-animation js-scrollShow">Check website<span class="hover-roll h5 material-icons">add</span></a>
         </div>
         <!-- mobile -->
         <div class="work__mobile d-flex justify-content-start position-relative">
@@ -80,21 +81,21 @@
           </div>
           <div class="work__mobile__desc d-flex flex-column justify-content-around my-3">
             <div class="d-flex align-items-center">
-              <span class="work__mobile__line mr-3 js-lineToRight"></span>
+              <span class="work__mobile__line mr-3 js-lineGrowRight"></span>
               <div>
                 <p>Vue</p>
                 <p class="font-s text-info">Template</p>
               </div>
             </div>
             <div class="d-flex align-items-center">
-              <span class="work__mobile__line mr-3 js-lineToRight"></span>
+              <span class="work__mobile__line mr-3 js-lineGrowRight"></span>
               <div>
                 <p>Ajax</p>
                 <p class="font-s text-info">API 串接</p>
               </div>
             </div>
             <div class="d-flex align-items-center">
-              <span class="work__mobile__line mr-3 js-lineToRight"></span>
+              <span class="work__mobile__line mr-3 js-lineGrowRight"></span>
               <div>
                 <p>GSAP</p>
                 <p class="font-s text-info">網頁動態</p>
@@ -111,9 +112,11 @@
     <div class="work__content position-absolute d-flex flex-row-reverse w-100">
       <!-- images -->
       <div class="work__desktop d-flex flex-column align-items-start w-50">
-        <a href="https://pandaachu.github.io/layout-week-8/" class="work__desktop__img hotelBooking__desktopImg position-relative">
+        <a
+          href="https://pandaachu.github.io/layout-week-8/"
+          class="work__desktop__img hotelBooking__desktopImg position-relative js-bgScroll">
           <div class="work__desktop__desc text-center position-absolute">
-            <h4 class="work__desktop__title h4 font-baskervville letter-spacing-1">Aloha</h4>
+            <h4 class="work__desktop__title h4 font-baskervville letter-spacing-1 js-scrollUp">ALOHA</h4>
             <p class="font-m font-baskervville font-italic text-highlight d-flex justify-content-center align-items-center">Desktop Ver. <span class="ml-2"><img src="./assets/images/arrow.png" alt=""></span></p>
           </div>
         </a>
@@ -121,29 +124,29 @@
       <!-- content -->
       <div class="work__text w-50">
         <div class="text-right">
-          <h3 class="h3 font-baskervville font-italic letter-spacing-1 text-highlight line-hight-n1 mb-4">Hotel <br> Booking</h3>
-        <h6 class="h6 letter-spacing-1 font-weight-normal mb-3">訂房網<span class="font-weight-light">模擬</span></h6>
-        <a href="https://pandaachu.github.io/layout-week-8/" class="h5 font-baskervville hover-underline-animation">Check website<span class="hover-roll h5 material-icons">add</span></a>
-        </div>
+          <h3 class="h3 font-baskervville font-italic letter-spacing-1 text-highlight line-hight-n1 mb-4 js-scrollShow">Hotel <br> Booking</h3>
+          <h6 class="h6 letter-spacing-1 font-weight-normal mb-3  js-scrollShow">訂房網<span class="font-weight-light">模擬</span></h6>
+          <a href="https://pandaachu.github.io/layout-week-8/" class="h5 font-baskervville hover-underline-animation  js-scrollShow">Check website<span class="hover-roll h5 material-icons">add</span></a>
+          </div>
         <!-- mobile -->
         <div class="work__mobile d-flex justify-content-end position-relative">
           <div class="work__mobile__desc d-flex flex-column justify-content-around my-3 position-relative">
             <div class="d-flex align-items-center flex-row-reverse">
-              <span class="work__mobile__line js-lineToRight"></span>
+              <span class="work__mobile__line js-lineGrowRight"></span>
               <div class="mr-3">
                 <p>Vue</p>
                 <p class="font-s text-info">Template</p>
               </div>
             </div>
             <div class="d-flex align-items-center flex-row-reverse">
-              <span class="work__mobile__line js-lineToRight"></span>
+              <span class="work__mobile__line js-lineGrowRight"></span>
               <div class="mr-3">
                 <p>Ajax</p>
                 <p class="font-s text-info">API 串接</p>
               </div>
             </div>
             <div class="d-flex align-items-center flex-row-reverse">
-              <span class="work__mobile__line js-lineToRight"></span>
+              <span class="work__mobile__line js-lineGrowRight"></span>
               <div class="mr-3">
                 <p>GSAP</p>
                 <p class="font-s text-info">網頁動態</p>
@@ -153,6 +156,62 @@
           <div class="d-flex flex-column align-items-center">
             <a href="https://pandaachu.github.io/layout-week-8/" class="work__mobile__img hotelBooking__mobileImg shadow-sm"></a>
             <p class="font-m font-baskervville font-italic text-highlight d-inline-flex justify-content-center align-items-center">mobile Ver. <span class="ml-2"><img src="./assets/images/arrow.png" alt=""></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="lineWrap lineWrap--odd mb-5"><span class="lineWrap__line"></span></div>
+  <!-- work - LandingPage treasure-->
+  <section class="lanTreasure work work--odd mb-7">
+    <div class="work__content position-absolute d-flex w-100">
+      <!-- images -->
+      <div class="work__desktop d-flex flex-column align-items-end w-50">
+        <a
+          href="https://pandaachu.github.io/js-week8-final/#/"
+          class="work__desktop__img lanTreasure__desktopImg position-relative js-bgScroll">
+          <div class="work__desktop__desc text-center position-absolute">
+            <h4 class="work__desktop__title h4 font-baskervville letter-spacing-1 js-scrollUp">TREASURE</h4>
+            <p class="font-m font-baskervville font-italic text-highlight d-flex justify-content-center align-items-center">Desktop Ver. <span class="ml-2"><img src="./assets/images/arrow.png" alt=""></span></p>
+          </div>
+        </a>
+      </div>
+      <!-- content -->
+      <div class="work__text w-50">
+        <div>
+          <h3 class="h3 font-baskervville font-italic letter-spacing-1 text-highlight line-hight-n1 mb-4 js-scrollShow">Landing <br> Page</h3>
+          <!-- <h3 class="h3 font-baskervville font-italic letter-spacing-1 text-highlight js-scrollShow">E-Shop</h3> -->
+          <h6 class="h6 letter-spacing-1 font-weight-normal mb-3 js-scrollShow">雪花秀產品</h6>
+          <a href="https://pandaachu.github.io/js-week8-final/#/" class="h5 font-baskervville hover-underline-animation js-scrollShow">Check website<span class="hover-roll h5 material-icons">add</span></a>
+        </div>
+        <!-- mobile -->
+        <div class="work__mobile d-flex justify-content-start position-relative">
+          <div class="d-flex flex-column align-items-center">
+            <a href="https://pandaachu.github.io/js-week8-final/#/" class="work__mobile__img lanTreasure__mobileImg shadow--w"></a>
+            <p class="font-m font-baskervville font-italic text-highlight d-inline-flex justify-content-center align-items-center">mobile Ver. <span class="ml-2"><img src="./assets/images/arrow.png" alt=""></span></p>
+          </div>
+          <div class="work__mobile__desc d-flex flex-column justify-content-around my-3">
+            <div class="d-flex align-items-center">
+              <span class="work__mobile__line mr-3 js-lineGrowRight"></span>
+              <div>
+                <p>Vue</p>
+                <p class="font-s text-info">Template</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+              <span class="work__mobile__line mr-3 js-lineGrowRight"></span>
+              <div>
+                <p>Ajax</p>
+                <p class="font-s text-info">API 串接</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+              <span class="work__mobile__line mr-3 js-lineGrowRight"></span>
+              <div>
+                <p>GSAP</p>
+                <p class="font-s text-info">網頁動態</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

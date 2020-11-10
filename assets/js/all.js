@@ -2,73 +2,160 @@
 
 $(document).ready(function () {
   gsap.registerPlugin(ScrollTrigger);
+  gsap.defaults({
+    ease: "power4"
+  });
   gsap.utils.toArray(".js-bgScroll").forEach(function (section) {
-    gsap.to(section, {
+    gsap.from(section, {
       // backgroundPosition: `center ${-innerHeight / 2}px`,
-      backgroundPosition: 'center 15%',
-      ease: 'power4',
+      backgroundPosition: '0% 100%',
       duration: 2,
       scrollTrigger: {
         trigger: section,
         // start: 'top 70%',
         // end: '+=100',
-        // markers: true,
-        toggleActions: 'restart none none none',
-        scrub: true
+        markers: true,
+        toggleActions: 'restart none none none' // scrub: true
+
       }
     });
-  });
-  gsap.to('.js-scroll--down', {
-    y: '+=30',
-    duration: 3,
-    stagger: 0.5,
-    ease: 'power4',
-    scrollTrigger: {
-      trigger: 'js-scroll',
-      toggleActions: 'restart none none none',
-      // markers: true,
-      scrub: true
-    }
-  });
-  gsap.to('.js-scroll--up', {
-    y: '-=50',
-    duration: 3,
-    stagger: 0.5,
-    ease: 'power4',
-    scrollTrigger: {
-      trigger: '.js-scroll--up',
-      toggleActions: 'restart none none none',
-      // markers: true,
-      scrub: true
-    }
-  });
-  gsap.to('.js-nameScroll', {
+  }); // profile section animation
+
+  gsap.to('.js-profileNameScroll', {
     opacity: 0,
     y: 100,
     duration: 2,
-    ease: 'power4',
     scrollTrigger: {
-      trigger: '.js-nameScroll',
-      start: '50px 40%',
-      end: '400px',
-      // toggleActions:'restart none none none',
-      markers: true,
+      trigger: '.js-profileNameScroll',
+      start: '50% 40%',
+      end: '120%',
+      // markers: true,
       scrub: true
     }
-  }); // line animation
+  });
+  gsap.to('.js-profileScrollUp', {
+    // opacity: 0,
+    y: -100,
+    duration: 2,
+    scrollTrigger: {
+      trigger: '.profile',
+      start: '50% 40%',
+      end: '120%',
+      // markers: true,
+      scrub: true
+    }
+  }); // work section animation
 
-  var line = document.querySelectorAll('.js-lineToRight');
-  gsap.utils.toArray(line).forEach(function (section) {
-    gsap.to(section, {
-      opacity: 1,
-      width: 150,
+  gsap.utils.toArray('.js-scrollUp').forEach(function (section) {
+    gsap.from(section, {
+      y: -100,
+      opacity: 0,
       duration: 3,
-      stagger: 0.5,
-      ease: 'power4',
+      delay: 4,
       scrollTrigger: {
         trigger: section,
+        // delay: 5,
+        start: '50% bottom',
+        // end: '400px',
         toggleActions: 'restart none none none' // markers: true,
 
+      }
+    });
+  }); // work content animation
+  // gsap.utils.toArray('.js-scrollShow').forEach(function(section) {
+  //   gsap.from(section, {
+  //     opacity: 0,
+  //     duration: 3,
+  //     stagger: 1,
+  //     ease: 'power4',
+  //     scrollTrigger: {
+  //       trigger: section,
+  //       start: '50% bottom',
+  //       end: '100%',
+  //       toggleActions:'restart none none none',
+  //       markers: true,
+  //     }
+  //   });
+  // });
+
+  gsap.utils.toArray('.work').forEach(function (section) {
+    var elems = section.querySelectorAll('.js-scrollShow'); // Set things up
+
+    gsap.set(elems, {
+      y: 50,
+      opacity: 0
+    });
+    ScrollTrigger.create({
+      trigger: section,
+      start: '50% bottom',
+      onEnter: function onEnter() {
+        return gsap.to(elems, {
+          y: 0,
+          opacity: 1,
+          duration: 2,
+          stagger: 0.2,
+          // delay: 0.3,
+          overwrite: 'auto'
+        });
+      },
+      onLeaveBack: function onLeaveBack() {
+        return gsap.to(elems, {
+          y: 50,
+          opacity: 0,
+          duration: 2,
+          stagger: 0.2,
+          // delay: 0.3,
+          overwrite: 'auto'
+        });
+      }
+    });
+  }); // line animation
+  // const line = document.querySelectorAll('.js-lineGrowRight')
+  // gsap.utils.toArray(line).forEach(function(section) {
+  //   gsap.to(section, {
+  //     opacity: 1, 
+  //     width:150,
+  //     duration: 3,
+  //     stagger: 0.5,
+  //     scrollTrigger: {
+  //       trigger: section,
+  //       toggleActions:'restart none none none',
+  //       // markers: true,
+  //     }
+  //   });
+  // });
+
+  gsap.utils.toArray('.work').forEach(function (section) {
+    var elems = section.querySelectorAll('.js-lineGrowRight'); // Set things up
+
+    gsap.set(elems, {
+      width: 0,
+      opacity: 0
+    });
+    ScrollTrigger.create({
+      trigger: section,
+      start: '50% bottom',
+      end: "+=500",
+      // end after scrolling 500px beyond the start
+      onEnter: function onEnter() {
+        return gsap.to(elems, {
+          width: 150,
+          opacity: 1,
+          duration: 3,
+          stagger: 0.2,
+          delay: 0.5,
+          overwrite: 'auto'
+        });
+      },
+      onLeaveBack: function onLeaveBack() {
+        return gsap.to(elems, {
+          width: 0,
+          opacity: 0,
+          duration: 3,
+          stagger: 0.2,
+          // delay: 1,
+          overwrite: 'auto'
+        });
       }
     });
   }); // gsap.utils.toArray(".js-lineToRight").forEach(function(section) {

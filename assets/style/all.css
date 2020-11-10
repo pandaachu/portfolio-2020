@@ -574,7 +574,7 @@ pre code {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1030px;
+    max-width: 1110px;
   }
 }
 
@@ -606,7 +606,7 @@ pre code {
 
 @media (min-width: 1200px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
-    max-width: 1030px;
+    max-width: 1110px;
   }
 }
 
@@ -11865,8 +11865,10 @@ body::before {
 }
 
 .index .work__desktop__img {
-  width: 328px;
+  width: 400px;
   height: 500px;
+  background-size: 100%;
+  background-position: 50% 0;
 }
 
 .index .work__desktop__desc {
@@ -11888,6 +11890,8 @@ body::before {
 .index .work__mobile__img {
   width: 128px;
   height: 228px;
+  background-size: 100%;
+  background-position: center 10%;
 }
 
 .index .work__mobile__line {
@@ -11936,20 +11940,22 @@ body::before {
 
 .index .eShop__mobileImg {
   background-image: url(../images/forest_mb.jpg);
-  background-size: 100%;
-  background-position: center 10%;
 }
 
 .index .hotelBooking__desktopImg {
   background-image: url(../images/aloha_pc.jpg);
-  background-size: 100%;
-  background-position: center 10%;
 }
 
 .index .hotelBooking__mobileImg {
   background-image: url(../images/aloha_mb.jpg);
-  background-size: 100%;
-  background-position: center 10%;
+}
+
+.index .lanTreasure__desktopImg {
+  background-image: url(../images/sul-treasure_pc.jpg);
+}
+
+.index .lanTreasure__mobileImg {
+  background-image: url(../images/sul-treasure_mb.jpg);
 }
 
 /*# sourceMappingURL=all.css.map */
