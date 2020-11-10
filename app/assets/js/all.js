@@ -11,7 +11,7 @@ $(document).ready(() => {
         trigger: section,
         // start: 'top 70%',
         // end: '+=100',
-        markers: true,
+        // markers: true,
         toggleActions:'restart none none none',
         // scrub: true
       }
@@ -64,21 +64,6 @@ $(document).ready(() => {
     });
   });
   // work content animation
-  // gsap.utils.toArray('.js-scrollShow').forEach(function(section) {
-  //   gsap.from(section, {
-  //     opacity: 0,
-  //     duration: 3,
-  //     stagger: 1,
-  //     ease: 'power4',
-  //     scrollTrigger: {
-  //       trigger: section,
-  //       start: '50% bottom',
-  //       end: '100%',
-  //       toggleActions:'restart none none none',
-  //       markers: true,
-  //     }
-  //   });
-  // });
   gsap.utils.toArray('.work').forEach(section => {
     const elems = section.querySelectorAll('.js-scrollShow');
     
@@ -109,19 +94,19 @@ $(document).ready(() => {
 
   // line animation
   // const line = document.querySelectorAll('.js-lineGrowRight')
-  // gsap.utils.toArray(line).forEach(function(section) {
-  //   gsap.to(section, {
-  //     opacity: 1, 
-  //     width:150,
-  //     duration: 3,
-  //     stagger: 0.5,
-  //     scrollTrigger: {
-  //       trigger: section,
-  //       toggleActions:'restart none none none',
-  //       // markers: true,
-  //     }
-  //   });
-  // });
+  gsap.utils.toArray('.lineWrap').forEach(function(section) {
+    gsap.to(section, {
+      y:120,
+      width: 50,
+      scrollTrigger: {
+        trigger: section,
+        start: '-200 center',
+        end: '200 top',
+        // markers: true,
+        scrub: true
+      }
+    });
+  });
 
   gsap.utils.toArray('.work').forEach(section => {
     const elems = section.querySelectorAll('.js-lineGrowRight');
@@ -151,20 +136,4 @@ $(document).ready(() => {
       })
     });
   })
-
-  // gsap.utils.toArray(".js-lineToRight").forEach(function(section) {
-  //   gsap.to(section, {
-  //     // backgroundPosition: `center ${-innerHeight / 2}px`,
-  //     width:150,
-  //     ease: 'power4',
-  //     duration: 1,
-  //     // scrollTrigger: {
-  //     //   trigger: section,
-  //     //   // start: 'top top',
-  //     //   // end: 'bottom bottom',
-  //     //   markers: true,
-  //     //   scrub: true
-  //     // }
-  //   });
-  // });
 });

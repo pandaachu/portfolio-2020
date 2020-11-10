@@ -63,8 +63,8 @@
       &__img{
         width: 128px;
         height: 228px;
-        background-size: 100%;
-        background-position: center 10%;
+        // background-size: 100%;
+        // background-position: center 10%;
       }
       &__line{
         // width: 150px;
@@ -138,6 +138,14 @@
     }
     &__mobileImg{
       background-image: url(../images/sul-treasure_mb.jpg);
+    }
+  }
+  .lanCLAFDT{
+    &__desktopImg{
+      background-image: url(../images/CLAFDT_pc.jpg);
+    }
+    &__mobileImg{
+      background-image: url(../images/CLAFDT_mb.jpg);
     }
   }
 }
