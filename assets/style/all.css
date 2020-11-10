@@ -11757,13 +11757,29 @@ html, body {
   background-repeat: no-repeat;
 }
 
-.bg-cover--center {
+.bg-center {
   background-position: center center;
 }
 
 .shadow--w {
   -webkit-box-shadow: 0 0.125rem 0.25rem rgba(242, 242, 242, 0.15);
           box-shadow: 0 0.125rem 0.25rem rgba(242, 242, 242, 0.15);
+}
+
+.z-index--1 {
+  z-index: -1;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.z-index-2 {
+  z-index: 2;
+}
+
+.z-index-3 {
+  z-index: 3;
 }
 
 .centerLineWrap {
@@ -11890,8 +11906,6 @@ body::before {
 .index .work__mobile__img {
   width: 128px;
   height: 228px;
-  background-size: 100%;
-  background-position: center 10%;
 }
 
 .index .work__mobile__line {
@@ -11956,6 +11970,14 @@ body::before {
 
 .index .lanTreasure__mobileImg {
   background-image: url(../images/sul-treasure_mb.jpg);
+}
+
+.index .lanCLAFDT__desktopImg {
+  background-image: url(../images/CLAFDT_pc.jpg);
+}
+
+.index .lanCLAFDT__mobileImg {
+  background-image: url(../images/CLAFDT_mb.jpg);
 }
 
 /*# sourceMappingURL=all.css.map */
