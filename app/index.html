@@ -5,9 +5,10 @@ engine: ejs
 current: index
 ---
 
-<div class="index container">
+<div class="index">
+  
   <!-- profile -->
-  <section class="profile d-flex justify-content-center position-relative">
+  <section class="profile d-flex justify-content-center position-relative container">
     <div class="d-flex flex-column justify-content-center" style="height: 80vh;">
       <div class="profile__imgWrap mb-4 js-bgScroll"></div>
       <ul class="d-flex justify-content-between font-playfair letter-spacing-1 text-info pl-0 js-profileScrollUp">
@@ -28,9 +29,10 @@ current: index
     </div>
   </section>
   <div class="lineWrap lineWrap--odd mb-5 js-scroll--down"><span class="lineWrap__line"></span></div>
+
   <!-- work - eShop -->
-  <section class="eShop work work--odd mb-7">
-    <div class="work__content position-absolute d-flex w-100">
+  <section class="eShop work work--odd position-relative mb-7">
+    <div class="work__content d-flex w-100 container">
       <!-- images -->
       <div class="work__desktop d-flex flex-column align-items-end w-50">
         <a
@@ -45,60 +47,74 @@ current: index
         </a>
       </div>
       <!-- content -->
-      <div class="work__text w-50">
+      <div class="work__text d-flex w-50">
         <div>
-          <h3 class="h3 font-baskervville font-italic letter-spacing-1 text-highlight js-scrollShow">E-Shop</h3>
-          <h6 class="h6 letter-spacing-1 font-weight-normal mb-3 js-scrollShow">電商網站<span class="font-weight-light">模擬</span></h6>
-          <a
-            href="https://pandaachu.github.io/js-week8-final/#/"
-            target="_blank" rel="noreferrer noopener"
-            class="h5 font-baskervville hover-underline-animation js-scrollShow"
-          >
-            Check website
-            <span class="hover-roll h5 material-icons">add</span>
-          </a>
-        </div>
-        <!-- mobile -->
-        <div class="work__mobile d-flex justify-content-start position-relative">
-          <div class="d-flex flex-column align-items-center">
+          <div>
+            <h3 class="h3 font-baskervville font-italic letter-spacing-1 text-highlight js-scrollShow">E-Shop</h3>
+            <h6 class="h6 letter-spacing-1 font-weight-normal mb-3 js-scrollShow">電商網站<span class="font-weight-light">模擬</span></h6>
             <a
               href="https://pandaachu.github.io/js-week8-final/#/"
               target="_blank" rel="noreferrer noopener"
-              class="work__mobile__img eShop__mobileImg shadow--w bg-cover bg-center"
-            ></a>
-            <p class="font-m font-baskervville font-italic text-dark d-inline-flex justify-content-center align-items-center">mobile Ver. <span class="ml-2"><img src="./assets/images/arrow.png" alt=""></span></p>
+              class="h5 font-baskervville hover-underline-animation js-scrollShow"
+            >
+              Check website
+              <span class="hover-roll h5 material-icons">add</span>
+            </a>
           </div>
-          <div class="work__mobile__desc d-flex flex-column justify-content-around my-3">
-            <div class="d-flex align-items-center">
-              <span class="work__mobile__line mr-3 js-lineGrowRight"></span>
-              <div>
-                <p>Vue</p>
-                <p class="font-s text-info">Template</p>
-              </div>
+          <!-- mobile -->
+          <div class="work__mobile d-flex justify-content-start position-relative">
+            <div class="d-flex flex-column align-items-center">
+              <a
+                href="https://pandaachu.github.io/js-week8-final/#/"
+                target="_blank" rel="noreferrer noopener"
+                class="work__mobile__img eShop__mobileImg shadow--w bg-cover bg-center"
+              ></a>
+              <p class="font-m font-baskervville font-italic text-light d-inline-flex justify-content-center align-items-center">mobile Ver. <span class="ml-2"><img src="./assets/images/arrow.png" alt=""></span></p>
             </div>
-            <div class="d-flex align-items-center">
-              <span class="work__mobile__line mr-3 js-lineGrowRight"></span>
-              <div>
-                <p>Ajax</p>
-                <p class="font-s text-info">API 串接</p>
+            <div class="work__mobile__desc d-flex flex-column justify-content-around my-3">
+              <div class="d-flex align-items-center">
+                <span class="work__mobile__line mr-3 js-lineGrowRight"></span>
+                <div>
+                  <p>Vue</p>
+                  <p class="font-s text-info">Template</p>
+                </div>
               </div>
-            </div>
-            <div class="d-flex align-items-center">
-              <span class="work__mobile__line mr-3 js-lineGrowRight"></span>
-              <div>
-                <p>GSAP</p>
-                <p class="font-s text-info">網頁動態</p>
+              <div class="d-flex align-items-center">
+                <span class="work__mobile__line mr-3 js-lineGrowRight"></span>
+                <div>
+                  <p>Ajax</p>
+                  <p class="font-s text-info">API 串接</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center">
+                <span class="work__mobile__line mr-3 js-lineGrowRight"></span>
+                <div>
+                  <p>GSAP</p>
+                  <p class="font-s text-info">網頁動態</p>
+                </div>
               </div>
             </div>
           </div>
+        </div>
+        <div class="align-self-end">
+          <h5 class="h5 border-bottom font-baskervville font-italic letter-spacing-2 mb-3"><span class="material-icons font-m mr-2">grade</span>Details</h5>
+          <ul>
+            <li><span class="material-icons font-s">fiber_manual_record</span> SPA 電商網站</li>
+            <li><span class="material-icons font-s">fiber_manual_record</span> 前後台管理頁面</li>
+            <li><span class="material-icons font-s">fiber_manual_record</span> 後端 API 串接</li>
+            <li><span class="material-icons font-s">fiber_manual_record</span> 產品列表篩選</li>
+            <li><span class="material-icons font-s">fiber_manual_record</span> 表單驗證</li>
+            <li><span class="material-icons font-s">fiber_manual_record</span> 使用 Vue Router 建立路由</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
   <div class="lineWrap lineWrap--even mb-7 position-relative z-index-2"><span class="lineWrap__line"></span></div>
+
   <!-- work - Hotel Booking -->
-  <section class="hotelBooking work work--even mb-5">
-    <div class="work__content position-absolute d-flex flex-row-reverse w-100">
+  <section class="hotelBooking work work--even position-relative mb-5">
+    <div class="work__content d-flex flex-row-reverse w-100 container">
       <!-- images -->
       <div class="work__desktop d-flex flex-column align-items-start w-50">
         <a
@@ -164,9 +180,10 @@ current: index
     </div>
   </section>
   <div class="lineWrap lineWrap--odd mb-7 position-relative z-index-2"><span class="lineWrap__line"></span></div>
+
   <!-- work - LandingPage treasure-->
-  <section class="lanTreasure work work--odd mb-7">
-    <div class="work__content position-absolute d-flex w-100">
+  <section class="lanTreasure work work--odd position-relative mb-7">
+    <div class="work__content d-flex w-100 container">
       <!-- images -->
       <div class="work__desktop d-flex flex-column align-items-end w-50">
         <a
@@ -233,9 +250,10 @@ current: index
     </div>
   </section>
   <div class="lineWrap lineWrap--even mb-7 position-relative z-index-2"><span class="lineWrap__line"></span></div>
+
   <!-- work - LandingPage CLAFDT-->
-  <section class="lanCLAFDT work work--even mb-5">
-    <div class="work__content position-absolute d-flex flex-row-reverse w-100">
+  <section class="lanCLAFDT work work--even position-relative mb-5">
+    <div class="work__content d-flex flex-row-reverse w-100 container">
       <!-- images -->
       <div class="work__desktop d-flex flex-column align-items-start w-50">
         <a
