@@ -77,8 +77,8 @@ $(document).ready(function () {
         return gsap.to(elems, {
           y: 0,
           opacity: 1,
-          duration: 2,
-          stagger: 0.2,
+          duration: 3,
+          stagger: 0.5,
           // delay: 0.3,
           overwrite: 'auto'
         });
