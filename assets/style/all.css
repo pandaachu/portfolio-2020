@@ -11588,8 +11588,12 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p {
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p, ol, ul, dl {
   margin-bottom: 0;
+}
+
+ul {
+  padding-left: 0;
 }
 
 html, body {
@@ -11856,28 +11860,34 @@ body::before {
 }
 
 .index .work {
-  width: 100%;
-  height: 734px;
-  border: 1px solid #B2A39D;
-  position: relative;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .index .work::after {
   content: '';
   display: block;
   position: absolute;
+  z-index: 0;
   width: calc(50% + 1px);
   height: 100%;
   top: 0;
   background-color: #B2A39D;
 }
 
+.index .work::before {
+  content: '';
+  position: absolute;
+  width: 90vw;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: 1px solid #B2A39D;
+}
+
 .index .work__content {
-  z-index: 2;
-  top: 53%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  position: relative;
+  z-index: 1;
 }
 
 .index .work__text {
@@ -11886,7 +11896,7 @@ body::before {
 
 .index .work__desktop__img {
   width: 450px;
-  height: 550px;
+  height: 600px;
   background-size: 100%;
   background-position: 50% 0;
 }
