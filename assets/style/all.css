@@ -11825,6 +11825,10 @@ body::before {
   margin-left: 35vw;
 }
 
+.navbar {
+  background-color: rgba(157, 139, 129, 0.7);
+}
+
 .index .lineWrap {
   width: 13%;
 }
