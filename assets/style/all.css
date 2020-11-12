@@ -11900,6 +11900,10 @@ html, body {
   background-color: #9d8b81;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .font-baskervville {
   font-family: 'Baskervville', serif;
 }
