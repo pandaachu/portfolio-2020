@@ -17,9 +17,9 @@
     <nav class="navbar navbar-light px-0 py-4 sticky-top">
       <div class="container">
         <ul class="d-flex w-100 pl-0 mb-0 font-weight-bold">
-          <li class="mr-4"><a class="text-dark" href="">About</a></li>
-          <li class="mr-auto"><a class="text-dark" href="">Work</a></li>
-          <li class="align-self-end"><a class="text-dark" href="">Contact</a></li>
+          <!-- <li class="mr-4"><a class="text-dark" href="">About</a></li> -->
+          <li class="mr-auto"><a class="text-dark" href="#work">Work</a></li>
+          <li class="align-self-end"><a class="text-dark" href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -43,7 +43,7 @@
         <h2 class="h2 font-baskervville font-italic letter-spacing-2">Chui</h2>
       </div>
       <div class="d-flex justify-content-between align-items-center">
-        <p class="text-dark font-weight-bold font-s letter-spacing-1">Front-End  Developer</p>
+        <p class="text-dark font-weight-bold font-s letter-spacing-1">Front-End Developer</p>
         <div class="lineWrap js-profileScrollUp"><span class="lineWrap__line"></span></div>
       </div>
     </div>
@@ -51,7 +51,7 @@
   <div class="lineWrap lineWrap--odd mb-5 js-scroll--down"><span class="lineWrap__line"></span></div>
 
   <!-- work - eShop -->
-  <section class="eShop work work--odd position-relative mb-7">
+  <section id="work" class="eShop work work--odd position-relative mb-7">
     <div class="work__content d-flex w-100 container">
       <!-- images -->
       <div class="work__desktop d-flex flex-column align-items-end w-50">
@@ -67,22 +67,23 @@
         </a>
       </div>
       <!-- content -->
-      <div class="work__text d-flex w-50">
+      <div class="work__text w-50">
+        <!-- desktop -->
         <div>
-          <div>
-            <h3 class="h3 font-baskervville font-italic letter-spacing-1 text-highlight js-scrollShow">E-Shop</h3>
-            <h6 class="h6 letter-spacing-1 font-weight-normal mb-3 js-scrollShow">電商網站<span class="font-weight-light">模擬</span></h6>
-            <a
-              href="https://pandaachu.github.io/js-week8-final/#/"
-              target="_blank" rel="noreferrer noopener"
-              class="h5 font-baskervville hover-underline-animation js-scrollShow"
-            >
-              Check website
-              <span class="hover-roll h5 material-icons">add</span>
-            </a>
-          </div>
-          <!-- mobile -->
-          <div class="work__mobile d-flex justify-content-start position-relative">
+          <h3 class="h3 font-baskervville font-italic letter-spacing-1 text-highlight js-scrollShow">E-Shop</h3>
+          <h6 class="h6 text-dark font-weight-bold letter-spacing-1 mb-3 js-scrollShow">電商網站<span class="font-weight-normal">模擬</span></h6>
+          <a
+            href="https://pandaachu.github.io/js-week8-final/#/"
+            target="_blank" rel="noreferrer noopener"
+            class="h5 text-dark font-baskervville hover-underline-animation js-scrollShow"
+          >
+            Check website
+            <sup class="a-spinRoll h6 material-icons ml-n1">add</sup>
+          </a>
+        </div>
+        <!-- mobile -->
+        <div class="d-flex mt-8">
+          <div class="work__mobile d-flex justify-content-start position-relative mr-auto">
             <div class="d-flex flex-column align-items-center">
               <a
                 href="https://pandaachu.github.io/js-week8-final/#/"
@@ -115,16 +116,14 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="align-self-end">
-          <h5 class="h5 border-bottom font-baskervville font-italic letter-spacing-2 mb-3"><span class="material-icons font-m mr-2">grade</span>Details</h5>
-          <ul>
-            <li><span class="material-icons font-s">fiber_manual_record</span> SPA 電商網站</li>
-            <li><span class="material-icons font-s">fiber_manual_record</span> 前後台管理頁面</li>
-            <li><span class="material-icons font-s">fiber_manual_record</span> 後端 API 串接</li>
-            <li><span class="material-icons font-s">fiber_manual_record</span> 產品列表篩選</li>
-            <li><span class="material-icons font-s">fiber_manual_record</span> 表單驗證</li>
-            <li><span class="material-icons font-s">fiber_manual_record</span> 使用 Vue Router 建立路由</li>
+          <ul class="work__details">
+            <li class="work__details__item h5 border-bottom font-baskervville font-italic text-center letter-spacing-2 mb-3 pb-2"><span class="material-icons font-m mr-2">grade</span>Details</li>
+            <li class="work__details__item pl-3"><span class="material-icons font-s mb-3">fiber_manual_record</span> SPA 電商網站</li>
+            <li class="work__details__item pl-3"><span class="material-icons font-s mb-3">fiber_manual_record</span> 前後台管理頁面</li>
+            <li class="work__details__item pl-3"><span class="material-icons font-s mb-3">fiber_manual_record</span> 後端 API 串接</li>
+            <li class="work__details__item pl-3"><span class="material-icons font-s mb-3">fiber_manual_record</span> 產品列表篩選</li>
+            <li class="work__details__item pl-3"><span class="material-icons font-s mb-3">fiber_manual_record</span> 表單驗證</li>
+            <li class="work__details__item pl-3"><span class="material-icons font-s">fiber_manual_record</span> 使用 Vue Router 建立路由</li>
           </ul>
         </div>
       </div>
@@ -150,51 +149,63 @@
       </div>
       <!-- content -->
       <div class="work__text w-50">
+        <!-- desktop -->
         <div class="text-right">
           <h3 class="h3 font-baskervville font-italic letter-spacing-1 text-highlight line-hight-n1 mb-4 js-scrollShow">Hotel <br> Booking</h3>
-          <h6 class="h6 letter-spacing-1 font-weight-normal mb-3  js-scrollShow">訂房網<span class="font-weight-light">模擬</span></h6>
+          <h6 class="h6 text-dark font-weight-bold letter-spacing-1 font-weight-normal mb-3  js-scrollShow">訂房網<span class="font-weight-normal">模擬</span></h6>
           <a
-            href="https://pandaachu.github.io/layout-week-8/"
+            href="https://pandaachu.github.io/js-week8-final/#/"
             target="_blank" rel="noreferrer noopener"
-            class="h5 font-baskervville hover-underline-animation js-scrollShow"
+            class="h5 text-dark font-baskervville hover-underline-animation js-scrollShow"
           >
             Check website
-            <span span class="hover-roll h5 material-icons">add</span>
-        </a>
+            <sup class="a-spinRoll h6 material-icons ml-n1">add</sup>
+          </a>
           </div>
         <!-- mobile -->
-        <div class="work__mobile d-flex justify-content-end position-relative">
-          <div class="work__mobile__desc d-flex flex-column justify-content-around my-3 position-relative">
-            <div class="d-flex align-items-center flex-row-reverse">
-              <span class="work__mobile__line js-lineGrowRight"></span>
-              <div class="mr-3">
-                <p>Gulp</p>
-                <p class="font-s text-info">壓縮檔案 <br> 提高網頁效率</p>
+        <div class="d-flex flex-row-reverse mt-8">
+          <div class="work__mobile d-flex justify-content-end position-relative ml-auto">
+            <div class="work__mobile__desc d-flex flex-column justify-content-around my-3 position-relative">
+              <div class="d-flex align-items-center flex-row-reverse">
+                <span class="work__mobile__line js-lineGrowRight"></span>
+                <div class="mr-3">
+                  <p>Gulp</p>
+                  <p class="font-s text-info">壓縮檔案 <br> 提高網頁效率</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center flex-row-reverse">
+                <span class="work__mobile__line js-lineGrowRight"></span>
+                <div class="mr-3">
+                  <p>Bootstrap</p>
+                  <p class="font-s text-info">CSS 框架</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center flex-row-reverse">
+                <span class="work__mobile__line js-lineGrowRight"></span>
+                <div class="mr-3">
+                  <p>RWD</p>
+                  <p class="font-s text-info">響應式網頁</p>
+                </div>
               </div>
             </div>
-            <div class="d-flex align-items-center flex-row-reverse">
-              <span class="work__mobile__line js-lineGrowRight"></span>
-              <div class="mr-3">
-                <p>Bootstrap</p>
-                <p class="font-s text-info">CSS 框架</p>
-              </div>
-            </div>
-            <div class="d-flex align-items-center flex-row-reverse">
-              <span class="work__mobile__line js-lineGrowRight"></span>
-              <div class="mr-3">
-                <p>RWD</p>
-                <p class="font-s text-info">響應式網頁</p>
-              </div>
+            <div class="d-flex flex-column align-items-center">
+              <a
+                href="https://pandaachu.github.io/layout-week-8/"
+                target="_blank" rel="noreferrer noopener"
+                class="work__mobile__img hotelBooking__mobileImg shadow bg-cover bg-center"
+              ></a>
+              <p class="font-m font-baskervville font-italic text-dark d-inline-flex justify-content-center align-items-center">mobile Ver. <span class="ml-2"><img src="./assets/images/arrow.png" alt=""></span></p>
             </div>
           </div>
-          <div class="d-flex flex-column align-items-center">
-            <a
-              href="https://pandaachu.github.io/layout-week-8/"
-              target="_blank" rel="noreferrer noopener"
-              class="work__mobile__img hotelBooking__mobileImg shadow bg-cover bg-center"
-            ></a>
-            <p class="font-m font-baskervville font-italic text-dark d-inline-flex justify-content-center align-items-center">mobile Ver. <span class="ml-2"><img src="./assets/images/arrow.png" alt=""></span></p>
-          </div>
+          <ul class="work__details">
+            <li class="work__details__item h5 border-bottom font-baskervville font-italic text-center letter-spacing-2 mb-3 pb-2"><span class="material-icons font-m mr-2">grade</span>Details</li>
+            <li class="work__details__item pl-3"><span class="material-icons font-s mb-3">fiber_manual_record</span> 多頁式網站</li>
+            <li class="work__details__item pl-3"><span class="material-icons font-s mb-3">fiber_manual_record</span> 日期區間選擇器</li>
+            <li class="work__details__item pl-3"><span class="material-icons font-s mb-3">fiber_manual_record</span> EJS 樣板引擎建立 Template </li>
+            <li class="work__details__item pl-3"><span class="material-icons font-s mb-3">fiber_manual_record</span> CSS Component</li>
+            <li class="work__details__item pl-3"><span class="material-icons font-s mb-3">fiber_manual_record</span> SCSS 7+1 架構</li>
+            <li class="work__details__item pl-3"><span class="material-icons font-s">fiber_manual_record</span> Bootstrap 修改變數</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -219,52 +230,61 @@
       </div>
       <!-- content -->
       <div class="work__text w-50">
+        <!-- desktop -->
         <div>
           <h3 class="h3 font-baskervville font-italic letter-spacing-1 text-highlight line-hight-n1 mb-4 js-scrollShow">Landing <br> Page</h3>
-          <!-- <h3 class="h3 font-baskervville font-italic letter-spacing-1 text-highlight js-scrollShow">E-Shop</h3> -->
-          <h6 class="h6 letter-spacing-1 font-weight-normal mb-3 js-scrollShow">雪花秀產品</h6>
+          <h6 class="h6 text-dark font-weight-bold letter-spacing-1 font-weight-normal mb-3 js-scrollShow">雪花秀產品</h6>
           <a
-            href="https://pandaachu.github.io/portfolio-sul-TT/"
+            href="https://pandaachu.github.io/js-week8-final/#/"
             target="_blank" rel="noreferrer noopener"
-            class="h5 font-baskervville hover-underline-animation js-scrollShow"
+            class="h5 text-dark font-baskervville hover-underline-animation js-scrollShow"
           >
             Check website
-            <span class="hover-roll h5 material-icons">add</span>
-        </a>
+            <sup class="a-spinRoll h6 material-icons ml-n1">add</sup>
+          </a>
         </div>
         <!-- mobile -->
-        <div class="work__mobile d-flex justify-content-start position-relative">
-          <div class="d-flex flex-column align-items-center">
-            <a
-              href="https://pandaachu.github.io/portfolio-sul-TT/"
-              target="_blank" rel="noreferrer noopener"
-              class="work__mobile__img lanTreasure__mobileImg shadow bg-cover bg-center"
-            ></a>
-            <p class="font-m font-baskervville font-italic text-dark d-inline-flex justify-content-center align-items-center">mobile Ver. <span class="ml-2"><img src="./assets/images/arrow.png" alt=""></span></p>
+        <div class="d-flex mt-8">
+          <div class="work__mobile d-flex justify-content-start position-relative mr-auto">
+            <div class="d-flex flex-column align-items-center">
+              <a
+                href="https://pandaachu.github.io/portfolio-sul-TT/"
+                target="_blank" rel="noreferrer noopener"
+                class="work__mobile__img lanTreasure__mobileImg shadow bg-cover bg-center"
+              ></a>
+              <p class="font-m font-baskervville font-italic text-light d-inline-flex justify-content-center align-items-center">mobile Ver. <span class="ml-2"><img src="./assets/images/arrow.png" alt=""></span></p>
+            </div>
+            <div class="work__mobile__desc d-flex flex-column justify-content-around my-3">
+              <div class="d-flex align-items-center">
+                <span class="work__mobile__line mr-3 js-lineGrowRight"></span>
+                <div>
+                  <p>jQuery</p>
+                  <p class="font-s text-info">網頁動畫</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center">
+                <span class="work__mobile__line mr-3 js-lineGrowRight"></span>
+                <div>
+                  <p>RWD</p>
+                  <p class="font-s text-info">響應式網頁</p>
+                </div>
+              </div>
+              <!-- <div class="d-flex align-items-center">
+                <span class="work__mobile__line mr-3 js-lineGrowRight"></span>
+                <div>
+                  <p>HTML / CSS</p>
+                  <p class="font-s text-info">背景光影呈現</p>
+                </div>
+              </div> -->
+            </div>
           </div>
-          <div class="work__mobile__desc d-flex flex-column justify-content-around my-3">
-            <div class="d-flex align-items-center">
-              <span class="work__mobile__line mr-3 js-lineGrowRight"></span>
-              <div>
-                <p>jQuery</p>
-                <p class="font-s text-info">網頁動畫</p>
-              </div>
-            </div>
-            <div class="d-flex align-items-center">
-              <span class="work__mobile__line mr-3 js-lineGrowRight"></span>
-              <div>
-                <p>RWD</p>
-                <p class="font-s text-info">響應式網頁</p>
-              </div>
-            </div>
-            <div class="d-flex align-items-center">
-              <span class="work__mobile__line mr-3 js-lineGrowRight"></span>
-              <div>
-                <p>HTML / CSS</p>
-                <p class="font-s text-info">背景光影呈現</p>
-              </div>
-            </div>
-          </div>
+          <ul class="work__details">
+            <li class="work__details__item h5 border-bottom font-baskervville font-italic text-center letter-spacing-2 mb-3 pb-2"><span class="material-icons font-m mr-2">grade</span>Details</li>
+            <li class="work__details__item pl-3"><span class="material-icons font-s mb-3">fiber_manual_record</span> 背景延伸及光影動畫</li>
+            <li class="work__details__item pl-3"><span class="material-icons font-s mb-3">fiber_manual_record</span> 客製化切版</li>
+            <li class="work__details__item pl-3"><span class="material-icons font-s mb-3">fiber_manual_record</span> 使用者互動特效</li>
+            <li class="work__details__item pl-3"><span class="material-icons font-s mb-3">fiber_manual_record</span> 光影特效</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -289,51 +309,59 @@
       </div>
       <!-- content -->
       <div class="work__text w-50">
+        <!-- desktop -->
         <div class="text-right">
           <h3 class="h3 font-baskervville font-italic letter-spacing-1 text-highlight line-hight-n1 mb-4 js-scrollShow">Landing <br> Page</h3>
-          <h6 class="h6 letter-spacing-1 font-weight-normal mb-3  js-scrollShow">蘭蔻產品</h6>
+          <h6 class="h6 text-dark font-weight-bold letter-spacing-1 font-weight-normal mb-3  js-scrollShow">蘭蔻產品</h6>
           <a
-            href="https://pandaachu.github.io/portfolio-lan-CLAFDT/"
+            href="https://pandaachu.github.io/js-week8-final/#/"
             target="_blank" rel="noreferrer noopener"
-            class="h5 font-baskervville hover-underline-animation js-scrollShow"
+            class="h5 text-dark font-baskervville hover-underline-animation js-scrollShow"
           >
             Check website
-            <span class="hover-roll h5 material-icons">add</span>
+            <sup class="a-spinRoll h6 material-icons ml-n1">add</sup>
           </a>
           </div>
         <!-- mobile -->
-        <div class="work__mobile d-flex justify-content-end position-relative">
-          <div class="work__mobile__desc d-flex flex-column justify-content-around my-3 position-relative">
-            <div class="d-flex align-items-center flex-row-reverse">
-              <span class="work__mobile__line js-lineGrowRight"></span>
-              <div class="mr-3">
-                <p>Layout</p>
-                <p class="font-s text-info">視覺設計</p>
+        <div class="d-flex flex-row-reverse mt-8">
+          <div class="work__mobile d-flex justify-content-end position-relative ml-auto">
+            <div class="work__mobile__desc d-flex flex-column justify-content-around my-3 position-relative">
+              <div class="d-flex align-items-center flex-row-reverse">
+                <span class="work__mobile__line js-lineGrowRight"></span>
+                <div class="mr-3">
+                  <p>Layout</p>
+                  <p class="font-s text-info">視覺設計</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center flex-row-reverse">
+                <span class="work__mobile__line js-lineGrowRight"></span>
+                <div class="mr-3">
+                  <p>jQuery</p>
+                  <p class="font-s text-info">進場動態</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center flex-row-reverse">
+                <span class="work__mobile__line js-lineGrowRight"></span>
+                <div class="mr-3">
+                  <p>CSS</p>
+                  <p class="font-s text-info">網頁客製動態</p>
+                </div>
               </div>
             </div>
-            <div class="d-flex align-items-center flex-row-reverse">
-              <span class="work__mobile__line js-lineGrowRight"></span>
-              <div class="mr-3">
-                <p>jQuery</p>
-                <p class="font-s text-info">進場動態</p>
-              </div>
-            </div>
-            <div class="d-flex align-items-center flex-row-reverse">
-              <span class="work__mobile__line js-lineGrowRight"></span>
-              <div class="mr-3">
-                <p>CSS</p>
-                <p class="font-s text-info">網頁客製動態</p>
-              </div>
+            <div class="d-flex flex-column align-items-center">
+              <a
+                href="https://pandaachu.github.io/portfolio-lan-CLAFDT/"
+                target="_blank" rel="noreferrer noopener"
+                class="work__mobile__img lanCLAFDT__mobileImg bg-cover bg-center shadow"
+              ></a>
+              <p class="font-m font-baskervville font-italic text-dark d-inline-flex justify-content-center align-items-center">mobile Ver. <span class="ml-2"><img src="./assets/images/arrow.png" alt=""></span></p>
             </div>
           </div>
-          <div class="d-flex flex-column align-items-center">
-            <a
-              href="https://pandaachu.github.io/portfolio-lan-CLAFDT/"
-              target="_blank" rel="noreferrer noopener"
-              class="work__mobile__img lanCLAFDT__mobileImg bg-cover bg-center shadow"
-            ></a>
-            <p class="font-m font-baskervville font-italic text-dark d-inline-flex justify-content-center align-items-center">mobile Ver. <span class="ml-2"><img src="./assets/images/arrow.png" alt=""></span></p>
-          </div>
+          <ul class="work__details">
+            <li class="work__details__item h5 border-bottom font-baskervville font-italic text-center letter-spacing-2 mb-3 pb-2"><span class="material-icons font-m mr-2">grade</span>Details</li>
+            <li class="work__details__item pl-3"><span class="material-icons font-s mb-3">fiber_manual_record</span> 客製化切版</li>
+            <li class="work__details__item pl-3"><span class="material-icons font-s mb-3">fiber_manual_record</span> 使用者互動特效</li>
+          </ul>
         </div>
       </div>
     </div>
