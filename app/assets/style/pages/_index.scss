@@ -70,18 +70,16 @@
       }
     }
     &__mobile{
-      margin-top: 7rem;
       &__img{
         width: 128px;
         height: 228px;
-        // background-size: 100%;
-        // background-position: center 10%;
+        // background-size: 10
       }
       &__line{
         // width: 150px;
         opacity: 0;
         height: 1px;
-        background-color: $info;
+        background-color: $secondary;
       }
     }
     // 單數

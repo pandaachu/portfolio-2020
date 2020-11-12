@@ -66,6 +66,7 @@ $(document).ready(() => {
   // work content animation
   gsap.utils.toArray('.work').forEach(section => {
     const elems = section.querySelectorAll('.js-scrollShow');
+    const details = section.querySelectorAll('.work__details__item');
     
     // Set things up
     gsap.set(elems, { y: 50, opacity: 0 });
@@ -89,6 +90,17 @@ $(document).ready(() => {
         // delay: 0.3,
         overwrite: 'auto'
       })
+    });
+    gsap.from(details, {
+      x: 200,
+      opacity: 0,
+      duration: 4,
+      stagger: 0.2,
+      scrollTrigger: {
+        trigger: section,
+        start: '50% bottom',
+        toggleActions:'restart none none none',
+      }
     });
   })
 
@@ -119,7 +131,7 @@ $(document).ready(() => {
       start: '50% bottom',
       end: "+=500", // end after scrolling 500px beyond the start
       onEnter: () => gsap.to(elems, {
-        width:150,
+        width:110,
         opacity: 1,
         duration: 3,
         stagger: 0.2,
