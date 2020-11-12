@@ -1,28 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title><%- title %></title>
-    <link rel="stylesheet" href="https://use.typekit.net/iog7scv.css">
-    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    <link rel="stylesheet" href="./assets/style/all.css">
+    <link rel="stylesheet" href="https://use.typekit.net/iog7scv.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Playfair+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style/all.css" />
   </head>
 
   <body>
-    <nav class="navbar navbar-light px-0 py-4 sticky-top">
+    <div class="sticky-top">
       <div class="container">
-        <ul class="d-flex w-100 pl-0 mb-0 font-weight-bold">
-          <!-- <li class="mr-4"><a class="text-dark" href="">About</a></li> -->
-          <li class="mr-auto js-scrollTo"><a class="text-dark" href="#work">Work</a></li>
-          <li class="align-self-end"><a class="text-dark" href="#contact">Contact</a></li>
-        </ul>
+      <nav class="navbar navbar-light py-4">
+          <ul class="d-flex justify-content-between w-100 px-4 mb-0 font-weight-bold">
+            <!-- <li class="mr-4"><a class="text-dark" href="">About</a></li> -->
+            <li class="js-scrollTo"><a class="text-dark" href="#work">Work</a></li>
+            <li><a class="text-dark" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-    </nav>
+    </div>
+    <!-- <div class="l-navbar bg-primary--t50">
+      <div class="container">
+        <nav class="navbar navbar-dark px-0 navbar-expand-lg">
+          <a
+            href="#"
+            aria-current="page"
+            class="logo navbar-brand position-absolute text-secondary d-flex m-0 router-link-exact-active router-link-active"
+          >
+            <div class="logo__icon mr-3">
+              <div class="logo__icon__line-wrap">
+                <div class="logo__icon__line"></div>
+                <div class="logo__icon__line"></div>
+                <div class="logo__icon__line"></div>
+                <div class="logo__icon__line"></div>
+              </div>
+            </div>
+            FOREST
+          </a>
+          <button
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            class="navbar-toggler"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            id="navbarNav"
+            class="collapse navbar-collapse navbar-collapse-bg custom-header-md-open"
+          >
+            <ul class="navbar-nav pl-3 pl-lg-0">
+              <li class="nav-item active">
+                <a
+                  href="#/"
+                  aria-current="page"
+                  class="nav-link pl-0 text-secondary font-m letter-spacing-xl router-link-exact-active router-link-active"
+                >
+                  首頁
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#/about" class="nav-link text-secondary font-m letter-spacing-xl">關於</a>
+              </li>
+              <li class="nav-item">
+                <a href="#/products" class="nav-link text-secondary font-m letter-spacing-xl">
+                  產品列表
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#/admin/login" class="nav-link text-secondary font-m letter-spacing-xl">
+                  登入
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex">
+            <a href="#/cart" class="cartIcon text-secondary">
+              <i class="fas fa-shopping-cart"></i>
+              <span
+                class="badge badge-pill badge-danger"
+                style="transform: translateX(-9px) translateY(4px)"
+              >
+                3
+              </span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </div> -->
 
     <%- contents %>
 
@@ -35,5 +115,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
-
 </html>
