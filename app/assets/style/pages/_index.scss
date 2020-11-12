@@ -16,9 +16,12 @@
       background-position: center 10%;
     }
     &__content{
-      width: 715px;
+      width: 80%;
       top: 30%;
       display: inline-block;
+      @include media-breakpoint-down(sm){
+        top: 45%;
+      }
       .lineWrap{
         width: 256px;
       }
