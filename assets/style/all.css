@@ -11898,6 +11898,7 @@ ul {
 
 html, body {
   background-color: #9d8b81;
+  overflow-x: hidden;
 }
 
 html {
