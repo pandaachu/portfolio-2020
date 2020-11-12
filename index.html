@@ -1,28 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Sylia's Portfolio</title>
-    <link rel="stylesheet" href="https://use.typekit.net/iog7scv.css">
-    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    <link rel="stylesheet" href="./assets/style/all.css">
+    <link rel="stylesheet" href="https://use.typekit.net/iog7scv.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Playfair+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style/all.css" />
   </head>
 
   <body>
-    <nav class="navbar navbar-light px-0 py-4 sticky-top">
+    <div class="sticky-top">
       <div class="container">
-        <ul class="d-flex w-100 pl-0 mb-0 font-weight-bold">
-          <!-- <li class="mr-4"><a class="text-dark" href="">About</a></li> -->
-          <li class="mr-auto js-scrollTo"><a class="text-dark" href="#work">Work</a></li>
-          <li class="align-self-end"><a class="text-dark" href="#contact">Contact</a></li>
-        </ul>
+      <nav class="navbar navbar-light py-4">
+          <ul class="d-flex justify-content-between w-100 px-4 mb-0 font-weight-bold">
+            <!-- <li class="mr-4"><a class="text-dark" href="">About</a></li> -->
+            <li class="js-scrollTo"><a class="text-dark" href="#work">Work</a></li>
+            <li><a class="text-dark" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-    </nav>
+    </div>
+    <!-- <div class="l-navbar bg-primary--t50">
+      <div class="container">
+        <nav class="navbar navbar-dark px-0 navbar-expand-lg">
+          <a
+            href="#"
+            aria-current="page"
+            class="logo navbar-brand position-absolute text-secondary d-flex m-0 router-link-exact-active router-link-active"
+          >
+            <div class="logo__icon mr-3">
+              <div class="logo__icon__line-wrap">
+                <div class="logo__icon__line"></div>
+                <div class="logo__icon__line"></div>
+                <div class="logo__icon__line"></div>
+                <div class="logo__icon__line"></div>
+              </div>
+            </div>
+            FOREST
+          </a>
+          <button
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            class="navbar-toggler"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            id="navbarNav"
+            class="collapse navbar-collapse navbar-collapse-bg custom-header-md-open"
+          >
+            <ul class="navbar-nav pl-3 pl-lg-0">
+              <li class="nav-item active">
+                <a
+                  href="#/"
+                  aria-current="page"
+                  class="nav-link pl-0 text-secondary font-m letter-spacing-xl router-link-exact-active router-link-active"
+                >
+                  首頁
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#/about" class="nav-link text-secondary font-m letter-spacing-xl">關於</a>
+              </li>
+              <li class="nav-item">
+                <a href="#/products" class="nav-link text-secondary font-m letter-spacing-xl">
+                  產品列表
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#/admin/login" class="nav-link text-secondary font-m letter-spacing-xl">
+                  登入
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex">
+            <a href="#/cart" class="cartIcon text-secondary">
+              <i class="fas fa-shopping-cart"></i>
+              <span
+                class="badge badge-pill badge-danger"
+                style="transform: translateX(-9px) translateY(4px)"
+              >
+                3
+              </span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </div> -->
 
     
 <div class="index">
@@ -69,7 +149,7 @@
       <!-- content -->
       <div class="work__text w-50">
         <!-- desktop -->
-        <div>
+        <div class="pl-8">
           <h3 class="h3 font-baskervville font-italic letter-spacing-1 text-highlight js-scrollShow">E-Shop</h3>
           <h6 class="h6 text-dark font-weight-bold letter-spacing-1 mb-3 js-scrollShow">電商網站<span class="font-weight-normal">模擬</span></h6>
           <a
@@ -82,8 +162,8 @@
           </a>
         </div>
         <!-- mobile -->
-        <div class="d-flex mt-8">
-          <div class="work__mobile d-flex justify-content-start position-relative mr-auto">
+        <div class="d-flex flex-lg-row flex-md-column mt-lg-8 mt-md-6">
+          <div class="work__mobile d-flex justify-content-start position-relative mr-lg-auto pl-8 mb-lg-0 mb-md-3">
             <div class="d-flex flex-column align-items-center">
               <a
                 href="https://pandaachu.github.io/js-week8-final/#/"
@@ -116,7 +196,7 @@
               </div>
             </div>
           </div>
-          <ul class="work__details">
+          <ul class="work__details mx-lg-0 mx-md-5">
             <li class="work__details__item h5 border-bottom font-baskervville font-italic text-center letter-spacing-2 mb-3 pb-2"><span class="material-icons font-m mr-2">grade</span>Details</li>
             <li class="work__details__item pl-3"><span class="material-icons font-s mb-3">fiber_manual_record</span> SPA 電商網站</li>
             <li class="work__details__item pl-3"><span class="material-icons font-s mb-3">fiber_manual_record</span> 前後台管理頁面</li>
@@ -150,7 +230,7 @@
       <!-- content -->
       <div class="work__text w-50">
         <!-- desktop -->
-        <div class="text-right">
+        <div class="text-right pr-8">
           <h3 class="h3 font-baskervville font-italic letter-spacing-1 text-highlight line-hight-n1 mb-4 js-scrollShow">Hotel <br> Booking</h3>
           <h6 class="h6 text-dark font-weight-bold letter-spacing-1 font-weight-normal mb-3  js-scrollShow">訂房網<span class="font-weight-normal">模擬</span></h6>
           <a
@@ -163,8 +243,8 @@
           </a>
           </div>
         <!-- mobile -->
-        <div class="d-flex flex-row-reverse mt-8">
-          <div class="work__mobile d-flex justify-content-end position-relative ml-auto">
+        <div class="d-flex flex-lg-row flex-md-column flex-lg-row-reverse  mt-lg-8 mt-md-6">
+          <div class="work__mobile d-flex justify-content-end position-relative ml-lg-auto pr-8 mb-lg-0 mb-md-3">
             <div class="work__mobile__desc d-flex flex-column justify-content-around my-3 position-relative">
               <div class="d-flex align-items-center flex-row-reverse">
                 <span class="work__mobile__line js-lineGrowRight"></span>
@@ -197,7 +277,7 @@
               <p class="font-m font-baskervville font-italic text-dark d-inline-flex justify-content-center align-items-center">mobile Ver. <span class="ml-2"><img src="./assets/images/arrow.png" alt=""></span></p>
             </div>
           </div>
-          <ul class="work__details">
+          <ul class="work__details mx-lg-0 mx-md-5">
             <li class="work__details__item h5 border-bottom font-baskervville font-italic text-center letter-spacing-2 mb-3 pb-2"><span class="material-icons font-m mr-2">grade</span>Details</li>
             <li class="work__details__item pl-3"><span class="material-icons font-s mb-3">fiber_manual_record</span> 多頁式網站</li>
             <li class="work__details__item pl-3"><span class="material-icons font-s mb-3">fiber_manual_record</span> 日期區間選擇器</li>
@@ -231,7 +311,7 @@
       <!-- content -->
       <div class="work__text w-50">
         <!-- desktop -->
-        <div>
+        <div class="pl-8">
           <h3 class="h3 font-baskervville font-italic letter-spacing-1 text-highlight line-hight-n1 mb-4 js-scrollShow">Landing <br> Page</h3>
           <h6 class="h6 text-dark font-weight-bold letter-spacing-1 font-weight-normal mb-3 js-scrollShow">雪花秀產品</h6>
           <a
@@ -244,8 +324,8 @@
           </a>
         </div>
         <!-- mobile -->
-        <div class="d-flex mt-8">
-          <div class="work__mobile d-flex justify-content-start position-relative mr-auto">
+        <div class="d-flex flex-lg-row flex-md-column mt-lg-8 mt-md-6">
+          <div class="work__mobile d-flex justify-content-start position-relative mr-lg-auto pl-8 mb-lg-0 mb-md-3">
             <div class="d-flex flex-column align-items-center">
               <a
                 href="https://pandaachu.github.io/portfolio-sul-TT/"
@@ -278,7 +358,7 @@
               </div> -->
             </div>
           </div>
-          <ul class="work__details">
+          <ul class="work__details mx-lg-0 mx-md-5">
             <li class="work__details__item h5 border-bottom font-baskervville font-italic text-center letter-spacing-2 mb-3 pb-2"><span class="material-icons font-m mr-2">grade</span>Details</li>
             <li class="work__details__item pl-3"><span class="material-icons font-s mb-3">fiber_manual_record</span> 背景延伸及光影動畫</li>
             <li class="work__details__item pl-3"><span class="material-icons font-s mb-3">fiber_manual_record</span> 客製化切版</li>
@@ -310,7 +390,7 @@
       <!-- content -->
       <div class="work__text w-50">
         <!-- desktop -->
-        <div class="text-right">
+        <div class="text-right pr-8">
           <h3 class="h3 font-baskervville font-italic letter-spacing-1 text-highlight line-hight-n1 mb-4 js-scrollShow">Landing <br> Page</h3>
           <h6 class="h6 text-dark font-weight-bold letter-spacing-1 font-weight-normal mb-3 js-scrollShow">蘭蔻產品</h6>
           <a
@@ -323,8 +403,8 @@
           </a>
           </div>
         <!-- mobile -->
-        <div class="d-flex flex-row-reverse mt-8">
-          <div class="work__mobile d-flex justify-content-end position-relative ml-auto">
+        <div class="d-flex flex-lg-row flex-md-column flex-lg-row-reverse  mt-lg-8 mt-md-6">
+          <div class="work__mobile d-flex justify-content-end position-relative ml-lg-auto pr-8 mb-lg-0 mb-md-3">
             <div class="work__mobile__desc d-flex flex-column justify-content-around my-3 position-relative">
               <div class="d-flex align-items-center flex-row-reverse">
                 <span class="work__mobile__line js-lineGrowRight"></span>
@@ -357,7 +437,7 @@
               <p class="font-m font-baskervville font-italic text-dark d-inline-flex justify-content-center align-items-center">mobile Ver. <span class="ml-2"><img src="./assets/images/arrow.png" alt=""></span></p>
             </div>
           </div>
-          <ul class="work__details">
+          <ul class="work__details mx-lg-0 mx-md-5">
             <li class="work__details__item h5 border-bottom font-baskervville font-italic text-center letter-spacing-2 mb-3 pb-2"><span class="material-icons font-m mr-2">grade</span>Details</li>
             <li class="work__details__item pl-3"><span class="material-icons font-s mb-3">fiber_manual_record</span> 客製化切版</li>
             <li class="work__details__item pl-3"><span class="material-icons font-s mb-3">fiber_manual_record</span> 使用者互動特效</li>
@@ -387,5 +467,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
-
 </html>
