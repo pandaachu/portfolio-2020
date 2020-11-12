@@ -11930,6 +11930,12 @@ html, body {
   font-size: 106px;
 }
 
+@media (max-width: 767.98px) {
+  .h2 {
+    font-size: 80px;
+  }
+}
+
 .h3 {
   font-size: 60px;
 }
@@ -12181,9 +12187,15 @@ body::before {
 }
 
 .index .profile__content {
-  width: 715px;
+  width: 80%;
   top: 30%;
   display: inline-block;
+}
+
+@media (max-width: 767.98px) {
+  .index .profile__content {
+    top: 45%;
+  }
 }
 
 .index .profile__content .lineWrap {
