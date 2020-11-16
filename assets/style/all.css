@@ -11898,7 +11898,6 @@ ul {
 
 html, body {
   background-color: #9d8b81;
-  overflow-x: hidden;
 }
 
 html {
@@ -12167,8 +12166,20 @@ body::before {
   margin-left: 65vw;
 }
 
-.navbar {
+.scrollLine {
+  width: 6px;
+  height: 100%;
+  position: fixed;
+  background-color: #FE4805;
+  z-index: 9999;
+}
+
+.navbarBg {
   background-color: rgba(157, 139, 129, 0.7);
+}
+
+.index {
+  overflow-x: hidden;
 }
 
 .index .lineWrap {
