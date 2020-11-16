@@ -2,6 +2,18 @@ $(document).ready(() => {
   gsap.registerPlugin(ScrollTrigger);
   gsap.defaults({ease: "power4"});
 
+  gsap.from('.scrollLine', {
+		scrollTrigger: {
+			trigger: 'body',
+			scrub: true,
+			start: 'top top',
+			end: 'bottom bottom'
+		},
+		scaleY: 0,
+		transformOrigin: 'top center',
+		ease: 'none'
+	})
+
   gsap.utils.toArray(".js-bgScroll").forEach(function(section) {
     gsap.from(section, {
       backgroundPosition: '0% 100%',
