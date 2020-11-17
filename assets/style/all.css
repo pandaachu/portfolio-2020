@@ -12178,6 +12178,11 @@ body::before {
   background-color: rgba(157, 139, 129, 0.7);
 }
 
+.navbarBg .navbar {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .index {
   overflow-x: hidden;
 }
