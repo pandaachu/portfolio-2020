@@ -12281,6 +12281,10 @@ body::before {
   }
 }
 
+.index .work__details {
+  max-width: 300px;
+}
+
 .index .work__desktop {
   -webkit-box-flex: 1;
       -ms-flex: 1;
