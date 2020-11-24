@@ -75,7 +75,9 @@
       }
     }
     &__details{
-      max-width: 300px;
+      @include media-breakpoint-up(lg){
+        max-width: 300px;
+      }
     }
     &__desktop{
       flex: 1;
