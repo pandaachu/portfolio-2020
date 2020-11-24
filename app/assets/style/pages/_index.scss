@@ -74,6 +74,9 @@
         padding-top: 0;
       }
     }
+    &__details{
+      max-width: 300px;
+    }
     &__desktop{
       flex: 1;
       &__img{
