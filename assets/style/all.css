@@ -12281,8 +12281,10 @@ body::before {
   }
 }
 
-.index .work__details {
-  max-width: 300px;
+@media (min-width: 992px) {
+  .index .work__details {
+    max-width: 300px;
+  }
 }
 
 .index .work__desktop {
